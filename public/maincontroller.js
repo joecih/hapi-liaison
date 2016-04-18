@@ -20,10 +20,7 @@ myapp.controller('MainController', function($scope, $http) {
             alertMessage('[ WARNING ] : Your input value is not a valid user name');
           } else {
 
-            //$scope.user = $scope.searchItem;
             $scope.items = response.data.items;
-            //$scope.avatar = response.data.items[0].avatar_url;
-            //console.log(response.data.items[0].avatar_url);
 
           }
 
