@@ -14,13 +14,18 @@ myapp.controller('MainController', function($scope, $http) {
           method: 'GET',
           url: _url,
         }).then(function successCallback(response) {
-          console.log(response.data);
+          console.log(response.data.items.length);
 
-          //$scope.user = $scope.searchItem;
-          $scope.items = response.data.items;
-          //$scope.avatar = response.data.items[0].avatar_url;
-          //console.log(response.data.items[0].avatar_url);
+          if (response.data.items.length <= 0) {
+            alertMessage('[ WARNING ] : Your input value is not a valid user name');
+          } else {
 
+            //$scope.user = $scope.searchItem;
+            $scope.items = response.data.items;
+            //$scope.avatar = response.data.items[0].avatar_url;
+            //console.log(response.data.items[0].avatar_url);
+
+          }
 
         }, function errorCallback(response) {
           console.log("this didn't work!");
@@ -30,8 +35,12 @@ myapp.controller('MainController', function($scope, $http) {
       }
     } else {
       // Some error control here.
-      alert("[ WARNING ] : You did not enter any text in the input field!");
+      alertMessage("[ WARNING ] : You did not enter any text in the input field!");
     }
+  }
+
+  function alertMessage(_message) {
+    alert(_message);
   }
 
 });
