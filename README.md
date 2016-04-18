@@ -1,5 +1,6 @@
 # hapi-liaison
 ----
+[Site Demo Page](http://joecih.github.io/hapi-liaison/)
 
 ## Simple application showing the use of HapiJS, AngularJS, and material-design-lite.
 
