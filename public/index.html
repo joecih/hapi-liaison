@@ -74,10 +74,11 @@
               Google &gt; Material Design Lite &gt; How to install MDL
             </div> -->
             <h3>GitHub User Search Output</h3>
-            <div>
+            <div class="mdl-grid">
+              <div ng-repeat="item in items" class="mdl-cell mdl-cell--4-col">
               <ul>
                 <!-- <li ng-repeat="item in items">Score: {{item.score}} | Url: {{item.url}}</li> -->
-                <li ng-repeat="item in items">
+                <li>
                   <h4>{{item.login}}</h4>
                   <a ng-href="{{item.html_url}}">
                   <img style="width: 80px" ng-src="{{item.avatar_url}}">
@@ -86,6 +87,7 @@
                   <p></p>
                 </li>
               </ul>
+            </div>
             </div>
 
           </div>

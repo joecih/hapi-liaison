@@ -21,6 +21,7 @@ myapp.controller('MainController', function($scope, $http) {
           } else {
 
             $scope.items = response.data.items;
+            console.log(response.data.items);
 
           }
 
