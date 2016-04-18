@@ -1,0 +1,18 @@
+{
+  "name": "hapi-liaison-challenge",
+  "version": "1.0.0",
+  "description": "Code challenge for Liaison Technologies",
+  "main": "server.js",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "hapi": "^13.3.0",
+    "inert": "^3.2.0",
+    "material-design-lite": "^1.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "none"
+  },
+  "author": "joecih",
+  "license": "ISC"
+}
