@@ -17,10 +17,10 @@ myapp.controller('MainController', function($scope, $http) {
       }).then(function successCallback(response) {
         console.log(response.data);
 
-        $scope.user = $scope.searchItem;
+        //$scope.user = $scope.searchItem;
         $scope.items = response.data.items;
-        $scope.avatar = response.data.items[0].avatar_url;
-        console.log(response.data.items[0].avatar_url);
+        //$scope.avatar = response.data.items[0].avatar_url;
+        //console.log(response.data.items[0].avatar_url);
 
 
       }, function errorCallback(response) {
