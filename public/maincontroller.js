@@ -15,9 +15,10 @@ myapp.controller('MainController', function($scope, $http) {
         method: 'GET',
         url: _url,
       }).then(function successCallback(response) {
-        console.log(response);
+        console.log(response.data);
 
         $scope.user = $scope.searchItem;
+        $scope.items = response.data;
 
 
       }, function errorCallback(response) {
