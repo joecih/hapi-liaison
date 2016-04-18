@@ -76,7 +76,7 @@
             <div style="padding: 10px; font-size: 20px; font-weight: bold" ng-model="user">{{user}}<br>
               <img style="width: 80px" ng-src={{avatar}} alt="User Avatar"><br>
               <ul>
-                <li ng-repeat="(login,score) in items">{{login}}: {{score}}</li>
+                <li ng-repeat="item in items">Score: {{item.score}} | Url: {{item.url}}</li>
               </ul>
             </div>
 
