@@ -57,7 +57,7 @@
             </label>
             <div class="mdl-textfield__expandable-holder">
               <form ng-submit="searchUser()">
-              <input ng-model="search" class="mdl-textfield__input" type="text" id="search">
+              <input ng-model="search" class="mdl-textfield__input" type="text" id="search" placeholder="e.g. 'Joecih'">
             </form>
               <label class="mdl-textfield__label" for="search">Enter your query...</label>
             </div>
@@ -76,7 +76,7 @@
             <div style="padding: 10px" ng-model="user">
               User Searched: {{user}}
               <ul>
-                <!-- <li ng-repeat="(country,goals) in items">{{country}}: {{goals}}</li> -->
+                <li ng-repeat="(country,goals) in items">{{country}}: {{goals}}</li>
               </ul>
             </div>
 
