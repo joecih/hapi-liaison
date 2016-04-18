@@ -73,24 +73,29 @@
               Google &gt; Material Design Lite &gt; How to install MDL
             </div> -->
             <h3>GitHub User Search Output</h3>
-            <div style="padding: 10px; font-size: 20px; font-weight: bold" ng-model="user">{{user}}<br>
-              <img style="width: 80px" ng-src={{avatar}} alt="User Avatar"><br>
+            <div>
               <ul>
-                <li ng-repeat="item in items">Score: {{item.score}} | Url: {{item.url}}</li>
+                <!-- <li ng-repeat="item in items">Score: {{item.score}} | Url: {{item.url}}</li> -->
+                <li ng-repeat="item in items">
+                  <h4>{{item.login}}</h4>
+                  <img style="width: 80px" ng-src="{{item.avatar_url}}">
+                  <span>{{item.score}}</span>
+                  <p></p>
+                </li>
               </ul>
             </div>
 
           </div>
         </div>
-        <footer class="demo-footer mdl-mini-footer">
+        <!-- <footer class="demo-footer mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">
             <ul class="mdl-mini-footer--link-list">
               <li><a href="#">Help</a></li>
-              <!-- <li><a href="#">Privacy and Terms</a></li>
-              <li><a href="#">User Agreement</a></li> -->
+              <li><a href="#">Privacy and Terms</a></li>
+              <li><a href="#">User Agreement</a></li>
             </ul>
           </div>
-        </footer>
+        </footer> -->
       </main>
     </div>
     <script src="material.min.js"></script>
