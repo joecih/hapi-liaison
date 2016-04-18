@@ -75,16 +75,15 @@
             </div> -->
             <h3>GitHub User Search Output</h3>
             <div class="mdl-grid">
-              <div ng-repeat="item in items" class="mdl-cell mdl-cell--4-col">
-              <ul>
+              <div style="text-align: center" ng-repeat="item in items" class="mdl-cell mdl-cell--4-col">
+              <ul style="list-style: none">
                 <!-- <li ng-repeat="item in items">Score: {{item.score}} | Url: {{item.url}}</li> -->
                 <li>
-                  <h4>{{item.login}}</h4>
+                  <h4><b>{{item.login}}</b></h4>
                   <a ng-href="{{item.html_url}}">
-                  <img style="width: 80px" ng-src="{{item.avatar_url}}">
-                </a>
+                  <img id="avatar" ng-src="{{item.avatar_url}}">
+                </a><br>
                   <span>Score: {{item.score}}</span>
-                  <p></p>
                 </li>
               </ul>
             </div>
