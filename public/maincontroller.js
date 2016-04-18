@@ -18,7 +18,9 @@ myapp.controller('MainController', function($scope, $http) {
         console.log(response.data);
 
         $scope.user = $scope.searchItem;
-        $scope.items = response.data;
+        $scope.items = response.data.items;
+        $scope.avatar = response.data.items[0].avatar_url;
+        console.log(response.data.items[0].avatar_url);
 
 
       }, function errorCallback(response) {

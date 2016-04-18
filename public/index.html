@@ -75,6 +75,7 @@
             <h3>GitHub User Search Output</h3>
             <div style="padding: 10px" ng-model="user">
               User Searched: {{user}}
+              <img ng-src={{avatar}} alt="User Avatar">
               <ul>
                 <li ng-repeat="(login,score) in items">{{login}}: {{score}}</li>
               </ul>
